@@ -558,50 +558,229 @@ body {
 
 #main-content.main-layout {
   margin-top: -60px; }
-  #main-content.main-layout .popular-categories #categories ul {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
-    background: #FFFFFF;
-    -webkit-box-shadow: 0px 3px 12px rgba(31, 33, 98, 0.06);
-    box-shadow: 0px 3px 12px rgba(31, 33, 98, 0.06);
-    border-radius: 24px; }
-    #main-content.main-layout .popular-categories #categories ul li {
-      list-style-type: none;
-      flex: 0 1 50%;
+  #main-content.main-layout .popular-categories {
+    padding-bottom: 79px; }
+    #main-content.main-layout .popular-categories #categories ul {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      flex-wrap: wrap;
+      padding: 0;
+      margin: 0 0 24px 0;
       background: #FFFFFF;
-      border-radius: 24px;
-      transition: .3s ease; }
-      #main-content.main-layout .popular-categories #categories ul li a {
-        text-align: center;
-        outline: none;
-        text-decoration: none;
-        display: block;
-        padding: 16px; }
-        #main-content.main-layout .popular-categories #categories ul li a i, #main-content.main-layout .popular-categories #categories ul li a h3 {
-          color: #0F2440;
-          opacity: .5; }
-        #main-content.main-layout .popular-categories #categories ul li a i {
-          font-size: 24px; }
-        #main-content.main-layout .popular-categories #categories ul li a h3 {
-          font-size: 14px; }
-      #main-content.main-layout .popular-categories #categories ul li.ui-state-active, #main-content.main-layout .popular-categories #categories ul li.ui-state-hover {
-        background: #F9F9FB; }
-        #main-content.main-layout .popular-categories #categories ul li.ui-state-active a, #main-content.main-layout .popular-categories #categories ul li.ui-state-hover a {
+      -webkit-box-shadow: 0px 3px 12px rgba(31, 33, 98, 0.06);
+      box-shadow: 0px 3px 12px rgba(31, 33, 98, 0.06);
+      border-radius: 24px; }
+      #main-content.main-layout .popular-categories #categories ul li {
+        list-style-type: none;
+        flex: 0 1 50%;
+        background: #FFFFFF;
+        border-radius: 24px;
+        transition: .3s ease; }
+        #main-content.main-layout .popular-categories #categories ul li a {
+          text-align: center;
+          outline: none;
           text-decoration: none;
-          outline: none; }
-          #main-content.main-layout .popular-categories #categories ul li.ui-state-active a i, #main-content.main-layout .popular-categories #categories ul li.ui-state-active a h3, #main-content.main-layout .popular-categories #categories ul li.ui-state-hover a i, #main-content.main-layout .popular-categories #categories ul li.ui-state-hover a h3 {
-            color: #0E48CA;
-            opacity: 1; }
-      @media (min-width: 768px) {
-        #main-content.main-layout .popular-categories #categories ul li {
-          flex: 0 1 25%; }
+          display: block;
+          padding: 16px; }
+          #main-content.main-layout .popular-categories #categories ul li a i, #main-content.main-layout .popular-categories #categories ul li a h3 {
+            color: #0F2440;
+            opacity: .5; }
           #main-content.main-layout .popular-categories #categories ul li a i {
-            font-size: 30px; }
+            font-size: 24px; }
           #main-content.main-layout .popular-categories #categories ul li a h3 {
-            font-size: 18px; } }
+            font-size: 14px; }
+        #main-content.main-layout .popular-categories #categories ul li.ui-state-active, #main-content.main-layout .popular-categories #categories ul li.ui-state-hover {
+          background: #F9F9FB; }
+          #main-content.main-layout .popular-categories #categories ul li.ui-state-active a, #main-content.main-layout .popular-categories #categories ul li.ui-state-hover a {
+            text-decoration: none;
+            outline: none; }
+            #main-content.main-layout .popular-categories #categories ul li.ui-state-active a i, #main-content.main-layout .popular-categories #categories ul li.ui-state-active a h3, #main-content.main-layout .popular-categories #categories ul li.ui-state-hover a i, #main-content.main-layout .popular-categories #categories ul li.ui-state-hover a h3 {
+              color: #0E48CA;
+              opacity: 1; }
+        @media (min-width: 768px) {
+          #main-content.main-layout .popular-categories #categories ul li {
+            flex: 0 1 25%; }
+            #main-content.main-layout .popular-categories #categories ul li a i {
+              font-size: 30px; }
+            #main-content.main-layout .popular-categories #categories ul li a h3 {
+              font-size: 18px; } }
+    #main-content.main-layout .popular-categories #categories .subcategories, #main-content.main-layout .popular-categories #categories .articles {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 30px; }
+      @media (min-width: 768px) {
+        #main-content.main-layout .popular-categories #categories .subcategories, #main-content.main-layout .popular-categories #categories .articles {
+          grid-template-columns: repeat(2, 1fr); } }
+      @media (min-width: 1024px) {
+        #main-content.main-layout .popular-categories #categories .subcategories, #main-content.main-layout .popular-categories #categories .articles {
+          grid-template-columns: repeat(3, 1fr); } }
+    #main-content.main-layout .popular-categories #categories .articles {
+      margin-top: 24px; }
+  #main-content.main-layout section.more-topics {
+    padding: 64px 0;
+    background: #F9F9FB; }
+    #main-content.main-layout section.more-topics h2 {
+      font-size: 30px;
+      font-weight: 900;
+      margin: 0 0 30px 0; }
+    #main-content.main-layout section.more-topics #topics {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap; }
+      #main-content.main-layout section.more-topics #topics > ul {
+        flex: 0 1 100%;
+        margin: 0 0 24px 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        overflow-x: auto; }
+        #main-content.main-layout section.more-topics #topics > ul li {
+          list-style-type: none;
+          margin-right: 12px; }
+          #main-content.main-layout section.more-topics #topics > ul li a {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            text-decoration: none;
+            outline: none;
+            padding: 8px 16px;
+            background: #FFFFFF;
+            border: 2px solid #F9F9FB;
+            border-radius: 24px;
+            width: max-content; }
+            #main-content.main-layout section.more-topics #topics > ul li a .icon {
+              margin-right: 8px; }
+              #main-content.main-layout section.more-topics #topics > ul li a .icon i {
+                font-size: 14px;
+                color: #939393; }
+            #main-content.main-layout section.more-topics #topics > ul li a h3 {
+              margin: 0;
+              color: #939393;
+              font-size: 14px; }
+          #main-content.main-layout section.more-topics #topics > ul li.ui-state-active a, #main-content.main-layout section.more-topics #topics > ul li.ui-state-hover a {
+            border: 2px solid #0F2440; }
+            #main-content.main-layout section.more-topics #topics > ul li.ui-state-active a .icon i, #main-content.main-layout section.more-topics #topics > ul li.ui-state-active a h3, #main-content.main-layout section.more-topics #topics > ul li.ui-state-hover a .icon i, #main-content.main-layout section.more-topics #topics > ul li.ui-state-hover a h3 {
+              color: #0F2440; }
+      #main-content.main-layout section.more-topics #topics > div {
+        flex: 0 1 100%; }
+        #main-content.main-layout section.more-topics #topics > div .article {
+          background: #FFFFFF;
+          border: 2px solid #E9F0FA;
+          margin-bottom: 14px;
+          border-radius: 12px; }
+          #main-content.main-layout section.more-topics #topics > div .article header {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center; }
+            #main-content.main-layout section.more-topics #topics > div .article header h3 {
+              margin: 0 10px 0 0; }
+            #main-content.main-layout section.more-topics #topics > div .article header span {
+              padding: 4px;
+              background: #F7FAFF;
+              border-radius: 1px;
+              color: #0F0F0F;
+              font-size: 11px;
+              font-weight: bold;
+              display: inline-block; }
+          #main-content.main-layout section.more-topics #topics > div .article p {
+            font-size: 14px;
+            font-weight: 600;
+            color: #939393; }
+        #main-content.main-layout section.more-topics #topics > div .view-category {
+          display: inline-block;
+          padding: 8px 24px;
+          background: #FFFFFF;
+          color: #0E48CA;
+          font-size: 16px;
+          font-weight: 600;
+          text-decoration: none;
+          margin-top: 24px;
+          border-radius: 24px; }
+    @media (min-width: 1024px) {
+      #main-content.main-layout section.more-topics {
+        padding: 96px 0; }
+        #main-content.main-layout section.more-topics h2 {
+          font-size: 36px; }
+        #main-content.main-layout section.more-topics #topics {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          flex-wrap: wrap; }
+          #main-content.main-layout section.more-topics #topics > ul {
+            flex: 0 1 360px;
+            overflow-x: hidden;
+            display: block;
+            margin: 0; }
+            #main-content.main-layout section.more-topics #topics > ul li a {
+              width: 100%;
+              padding: 16px 24px; }
+              #main-content.main-layout section.more-topics #topics > ul li a .icon i, #main-content.main-layout section.more-topics #topics > ul li a h3 {
+                font-size: 24px; }
+          #main-content.main-layout section.more-topics #topics > div {
+            flex: 0 1 calc(100% - 400px); } }
+
+.subcategory {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 24px;
+  border: 1px solid #E9F0FA;
+  border-radius: 12px; }
+  .subcategory .column-left {
+    flex: 0 1 40px; }
+    .subcategory .column-left i {
+      font-size: 32px;
+      color: #0E48CA; }
+  .subcategory .column-right {
+    flex: 0 1 calc(100% - 55px); }
+    .subcategory .column-right h3 {
+      margin: 0 0 8px 0;
+      color: #0F2440;
+      font-size: 24px;
+      font-weight: 800; }
+    .subcategory .column-right .num-of-articles {
+      padding: 4px;
+      background: #F7FAFF;
+      border-radius: 1px;
+      color: #0F0F0F;
+      font-size: 11px;
+      font-weight: bold;
+      display: inline-block; }
+    .subcategory .column-right .subcategory-description {
+      color: #0F0F0F;
+      opacity: .6;
+      font-size: 14px;
+      font-weight: 600; }
+
+.article {
+  padding: 24px; }
+  .article h3 {
+    font-size: 24px;
+    font-weight: 900;
+    color: #0F0F0F;
+    margin: 0 0 12px 0; }
+  .article p.trimmed-body {
+    color: #939393;
+    font-size: 14px;
+    font-weight: 600; }
+  .article footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+    .article footer span {
+      padding: 4px;
+      background: #E9F0FA;
+      border-radius: 1px;
+      color: #0F0F0F;
+      font-size: 11px;
+      font-weight: bold;
+      display: inline-block; }
+    .article footer .video {
+      margin-right: 5px; }
+    .article footer .likes {
+      margin-left: auto; }
 
 /*# sourceMappingURL=style.css.map */

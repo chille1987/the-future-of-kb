@@ -23,5 +23,5 @@ $(function() {
     userNav.removeClass('active');
   });
 
-  $('#categories').tabs();
+  $('#categories, #topics').tabs();
 })
