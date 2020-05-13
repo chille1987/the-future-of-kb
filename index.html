@@ -46,13 +46,18 @@
           <div class="column-left">
             <div id="branding">
               <a href="/"><img src="img/logo.svg" alt="Helpjuice Logo"></a>
-              <div class="search-form" autocomplete="off">
-                <input id="search" type="search" placeholder="Search..." autocomplete="off">
-              </div>
+            </div>
+            <div class="search-form" autocomplete="off">
+              <input id="search" type="search" placeholder="Search..." autocomplete="off">
             </div>
           </div>
           <div class="column-right">
-            <nav>
+            <a href="#" class="open-user-nav"><i class="far fa-bars"></i></a>
+            <nav class="user-nav">
+              <header>
+                <a href="/" class="nav-logo"><img src="img/logo.svg" alt="Helpjuice Logo"></a>
+                <a href="#" class="close-user-nav"><i class="far fa-times"></i></a>
+              </header>
               <ul>
                 <li><a href="https://feedback.helpjuice.com">Feedback</a></li>
                 <li><a href="/contact">Contact Us</a></li>
@@ -72,7 +77,7 @@
       </div>
     </div>
 
-    <main class="main-content">
+    <main id="main-content" class="main-layout">
 
       <section class="popular-categories">
         <div class="container">
@@ -97,7 +102,7 @@
               <li>
                 <a href="#category-3">
                   <div class="icon">
-                    <i class="fas fa-digging"></i>
+                    <i class="fas fa-globe-stand"></i>
                     <h3>Building a Knowledge Base</h3>
                   </div>
                 </a>
@@ -107,14 +112,6 @@
                   <div class="icon">
                     <i class="fas fa-users-cog"></i>
                     <h3>Users Management</h3>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#category-5">
-                  <div class="icon">
-                    <i class="fas fa-pen-nib"></i>
-                    <h3>Editor</h3>
                   </div>
                 </a>
               </li>
@@ -197,9 +194,6 @@
               
             </div>
             <div id="category-4">
-              
-            </div>
-            <div id="category-5">
               
             </div>
           </div>

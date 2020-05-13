@@ -4,7 +4,7 @@ Error: Undefined variable: "$black".
 
 1: #admin-toolbar {
 2:   background: $black;
-3:   @include flex-position(space-between, center);
+3:   display: none;
 4:   padding: 0 40px;
 5:   nav {
 6:     flex: 0 1 50%;
@@ -65,4 +65,4 @@ scss/main_layout.scss:2
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$black\".\A         on line 2 of scss/main_layout.scss\A \A 1: #admin-toolbar {\A 2:   background: $black;\A 3:   @include flex-position(space-between, center);\A 4:   padding: 0 40px;\A 5:   nav {\A 6:     flex: 0 1 50%;\A 7:     &.toolbar-navigation,"; }
+  content: "Error: Undefined variable: \"$black\".\A         on line 2 of scss/main_layout.scss\A \A 1: #admin-toolbar {\A 2:   background: $black;\A 3:   display: none;\A 4:   padding: 0 40px;\A 5:   nav {\A 6:     flex: 0 1 50%;\A 7:     &.toolbar-navigation,"; }

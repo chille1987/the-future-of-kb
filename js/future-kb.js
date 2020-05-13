@@ -1,25 +1,27 @@
 $(function() {
   // Admin toolbar
-  const openDropdown = document.querySelector('.open-dropdown')
-  const userDropdown = document.querySelector('.user-dropdown')
+  const openDropdown = $('.open-dropdown')
+  const userDropdown = $('.user-dropdown')
 
-  openDropdown.addEventListener('click', () => {
-    userDropdown.classList.toggle('active');
+  openDropdown.on('click', function(e) {
+    e.preventDefault()
+    userDropdown.toggleClass('active');
   });
 
-  document.addEventListener("click", (e) => {
-    let targetElement = e.target;
+  // Header
+  const openNav = $('a.open-user-nav')
+  const closeNav = $('a.close-user-nav')
+  const userNav = $('.user-nav')
 
-    do {
-      if (targetElement == userDropdown || targetElement == openDropdown) {
-        return;
-      }
-      targetElement = targetElement.parentNode;
-    } while (targetElement);
-
-    userDropdown.classList.remove('active');
+  openNav.on('click', function(e) {
+    e.preventDefault()
+    userNav.addClass('active');
   });
-
+  
+  closeNav.on('click', function(e) {
+    e.preventDefault()
+    userNav.removeClass('active');
+  });
 
   $('#categories').tabs();
 })
