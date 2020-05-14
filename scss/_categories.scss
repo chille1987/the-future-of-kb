@@ -1,0 +1,10 @@
+h1.category-name {
+  font-size: 36px;
+  margin: 12px 0 24px;
+  @include media(tablet) {
+    font-size: 48px;
+  }
+}
+.categories-content {
+  padding: 48px 0;
+}
