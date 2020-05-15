@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>The Future of KB</title>
+    <title>Author Page - The Future of KB</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -13,32 +13,6 @@
   </head>
 
   <body>
-
-    <div id="admin-toolbar">
-      <nav class="toolbar-navigation">
-        <ul>
-          <li><img src="https://static.helpjuice.com/assets/marketing/helpjuice-logo-assets/helpjuice-icon-white-93df38728b539eefeba04021ee0f2138f4f9a37d6fbfef0d0534b22a630e1af9.svg" alt="Helpjuice Icon" width="22" /></li>
-          <li><a href="#">Dashboard</a></li>
-          <li><a href="#">Analytics</a></li>
-          <li><a href="#">Customize</a></li>
-        </ul>
-      </nav>
-      <nav class="user-nav">
-        <ul>
-          <li><a href="#">Edit This Article</a></li>
-          <li><img src="https://secure.gravatar.com/avatar/23c7df8aa7a3035caf58a825d71b3332.png?s=96&d=blank" alt="Denis Omerovic Profile Photo" width="32px" height="32px"></li>
-          <li>
-            <a href="#" class="open-dropdown"><i class="fas fa-caret-down"></i></a>
-            <div class="user-dropdown">
-              <ul>
-                <li><a href="#">Your Profile</a></li>
-                <li><a href="#">Log Out</a></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </nav>
-    </div>
 
     <header id="main-header">
       <div class="container">
@@ -70,57 +44,42 @@
 
     <div class="page-intro">
       <div class="container">
-        <ul class="breadcrumbs">
-          <li><a href="/">Home</a></li>
-          <li><a href="/">Getting Started</a></li>
-        </ul>
-        <h1 class="category-name">Analytics Section</h1>
-        <div class="search-form" autocomplete="off">
-          <input id="search" type="search" placeholder="Search..." autocomplete="off">
+        
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="author-info">
+        <div class="column-left">
+          <img src="/img/author.png" alt="Author image">
+          <div class="info">
+            <h2>Emil Hajric, CEO</h2>
+            <p class="email">hajric@helpjuice.com</p>
+            <div class="articles-and-followers">
+              <span class="articles">14 Articles</span>
+              <span class="followers">123 Followers</span>
+            </div>
+            <button class="follow">Follow</button>
+          </div>
+        </div>
+        <div class="column-right">
+            <div class="activity">
+              <span class="number">01</span>
+              <p class="articles-last-month">Article <br/> Last Month</p>
+              <p class="percent"><i class="far fa-arrow-down"></i>13.8%</p>
+            </div>
+            <div class="chart">
+              <img src="/img/chart.png" alt="Chart">
+            </div>
         </div>
       </div>
     </div>
 
-    <main id="main-content" class="category-content">
+    <main id="main-content" class="author-page">
 
-      <div class="categories-content">
-        <div class="container">
-          <div class="subcategories-list">
-            <a href="/category.html" class="subcategory">
-              <div class="column-left">
-                <i class="far fa-analytics"></i>
-              </div>
-              <div class="column-right">
-                <h3 class="subcategory-title">Analytics Section</h3>
-                <div class="num-of-articles">12 articles</div>
-                <p class="subcategory-description">Everything you wanna know to level up your knowledge base with analytics!</p>
-              </div>
-            </a>
-            <a href="/category.html" class="subcategory">
-              <div class="column-left">
-                <i class="far fa-paint-roller"></i>
-              </div>
-              <div class="column-right">
-                <h3 class="subcategory-title">Customize Area</h3>
-                <div class="num-of-articles">4 articles</div>
-                <p class="subcategory-description">Articles that will help you customize your knowledge base to align perfectly with your brand!</p>
-              </div>
-            </a>
-            <a href="/category.html" class="subcategory">
-              <div class="column-left">
-                <i class="far fa-snowboarding"></i>
-              </div>
-              <div class="column-right">
-                <h3 class="subcategory-title">Activities</h3>
-                <div class="num-of-articles">19 articles</div>
-                <p class="subcategory-description">Articles about following activities of your employees so you can improve team productivity!</p>
-              </div>
-            </a>
-          </div>
-
-          <h2>Articles</h2>
-    
-          <div class="articles-list">
+      <div class="container">  
+        <div class="author-content">
+          <div class="author-articles-list">
             <a href="/article.html" class="article">
               <h3 class="article-title">What is a Knowledge base?</h3>
               <p class="trimmed-body">Learn how a knowledge base can benefit your customers and your employees as well as how to create a knowledge base that works for your intended audience.</p>
@@ -139,14 +98,6 @@
               </footer>
             </a>
             <a href="/article.html" class="article">
-              <h3 class="article-title">All you need to know about writing articles</h3>
-              <p class="trimmed-body">A Stupid-Simple Guide on How to Write Perfect Knowledge Base Article</p>
-              <footer>
-                <span class="reading-time"><i class="fas fa-clock"></i> 6 min</span>
-                <span class="likes"><i class="fas fa-thumbs-up"></i> 12 Likes</span>
-              </footer>
-            </a>
-            <a href="/article.html" class="article">
               <h3 class="article-title">Importing users & Knowledge Base Access</h3>
               <p class="trimmed-body">Import users, and manage their access to knowledge base in bulk!</p>
               <footer>
@@ -156,7 +107,39 @@
             </a>
           </div>
         </div>
-      </div>
+
+        <aside class="sidebar">
+          <div class="followed-articles">
+            <h3>Emil follows these articles</h3>
+            <ul>
+              <li>
+                <a href="/article.html">Can I reorder my questions and categories?</a>
+                <p>One great way to increase engagement with your knowledge base, is to use the data against your users…</p>
+              </li>
+              <li>
+                <a href="/article.html">What are user roles in Dashboard?</a>
+                <p>Helpjuice user roles control what users can and can’t do on your knowledge base. This includes customization…</p>
+              </li>
+              <li>
+                <a href="/article.html">Understanding Basic Customization</a>
+                <p>Some themes support Basic Customization. This feature, allows you to easily change some basic layout…</p>
+              </li>
+              <li>
+                <a href="/article.html">Hiding categories/questions from public view</a>
+                <p>Protecting categories and questions from public visitors is one of most important things in Helpjuice. We take...</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="member-of-groups">
+            <h3>Member of Groups</h3>
+            <div class="group">Design</div>
+            <div class="group">Marketing</div>
+            <div class="group">Helpjuice Sales</div>
+            <div class="group">Content</div>
+          </div>
+        </aside>
+      </container>
 
     </main>
 

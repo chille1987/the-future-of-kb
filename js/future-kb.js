@@ -24,4 +24,19 @@ $(function() {
   });
 
   $('#categories, #topics').tabs();
+
+  // Author Page
+  sidebar = $('aside.sidebar');
+  windowWidth = $(window).width()
+
+  if(windowWidth >= 1280) {
+    $(document).scroll(function() {
+      if ($(document).scrollTop() >= 350) {
+        sidebar.addClass('fixed');
+      } else {
+        sidebar.removeClass('fixed');
+      }
+    });
+  }
+  
 })
