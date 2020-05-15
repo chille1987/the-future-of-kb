@@ -1,0 +1,128 @@
+.page-intro {
+  .article-header {
+    max-width: 780px;
+    h1 {
+      font-size: 36px;
+      font-weight: 900;
+    }
+    .article-description {
+      font-size: 20px;
+      font-weight: 600;
+      color: $white;
+    }
+    .author {
+      @include flex-position(space-between, center);
+      margin-bottom: 20px;
+      .column-left {
+        flex: 0 1 32px;
+        img {
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+        }
+      }
+      .column-right {
+        flex: 0 1 calc(100% - 40px);
+        .name {
+
+          font-size: 16px;
+          font-weight: 600;
+          margin: 0;
+        }
+        .date {
+          font-size: 12px;
+          margin: 0;
+          opacity: .6;
+        }
+      }
+    }
+    .tags {
+      @include flex-position(flex-start, center);
+      flex-wrap: wrap;
+      span {
+        font-size: 12px;
+        font-weight: 600;
+        background: $white;
+        color: $body_color;
+        padding: 6px 12px;
+        border-radius: 10px;
+        margin-right: 10px;
+      }
+    }
+    @include media(tablet) {
+      h1 {
+        font-size: 48px;
+      }
+      .article-description {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .table-of-contents {
+    background: $white;
+    width: 100%;
+    max-width: 360px;
+    border-radius: 16px;
+    padding: 16px;
+    margin-top: 48px;
+    @include box-shadow(0px 2px 6px rgba(0, 0, 0, 0.06));
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        margin: 5px 0;
+        padding: 0;
+        a {
+          font-size: 16px;
+          font-weight: 600;
+          color: $titles_color;
+          text-decoration: none;
+          transition: .3s ease;
+          &:hover {
+            color: $links_color;
+          }
+        }
+      }
+    }
+    @include media(desktop) {
+      position: fixed;
+      top: 200px;
+      right: 0;
+      border-radius: 32px 0 0 32px;
+      padding: 32px;
+      margin: 0;
+    }
+  }
+}
+
+#main-content {
+  article {
+    max-width: 780px;
+    padding: 64px 0;
+  }
+  .related-articles {
+    background: $background;
+    padding: 64px 0;
+    h2 {
+      font-size: 24px;
+      font-weight: 600;
+      color: $titles_color;
+      margin: 0 0 32px 0;
+    }
+    .related-articles-list {
+      max-width: 780px;
+      .article {
+        display: block;
+        padding: 24px;
+        border: 2px solid #E9F0FA;
+        border-radius: 12px;
+        margin-bottom: 14px;
+        background: $white;
+        p {
+          color: $gray;
+        }
+      }
+    }
+  }
+}
